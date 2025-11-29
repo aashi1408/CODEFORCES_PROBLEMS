@@ -13,13 +13,7 @@ int main()
 	for(int i=1 ; i<=T ; i++)//i is just a counting of tests
 	{
 		cin>>x;//inputing the string
-		bool flag = false;//assuming that string is Bad
-
-//		if (x == '1')
-//		{
-//			cout<<"Good";
-//			break;
-//		}
+		bool flag = false;//assuming that string is NOT Good
 		for(int j=0 ; j<x.length()-2 ; j++)
 		{
 			if((x[j]=='0' && x[j+1]=='1' && x[j+2]=='0')||
@@ -27,7 +21,7 @@ int main()
 			{
 				flag = true;
 			}
-//			else
+//			else//No need of this else
 //			{
 //			 flag = false;
 //			 break;
@@ -40,3 +34,4 @@ int main()
 	}
 	return 0;
 }
+
