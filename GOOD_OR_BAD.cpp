@@ -15,6 +15,11 @@ int main()
 		cin>>x;//inputing the string
 		bool flag = false;//assuming that string is Bad
 
+//		if (x == '1')
+//		{
+//			cout<<"Good";
+//			break;
+//		}
 		for(int j=0 ; j<x.length()-2 ; j++)
 		{
 			if((x[j]=='0' && x[j+1]=='1' && x[j+2]=='0')||
@@ -22,15 +27,15 @@ int main()
 			{
 				flag = true;
 			}
-			else
-			{
-			 flag = false;
-			 break;
-			}
+//			else
+//			{
+//			 flag = false;
+//			 break;
+//			}
 	
 		}
 		if (flag == true) cout<<"Good\n";
-		else cout<<"Bad\n";
+		else if(flag==false) cout<<"Bad\n";
 
 	}
 	return 0;
